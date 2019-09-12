@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="NHibernate.Castle" Version="3.1.0.4000" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\NetBlog.Utils.Enums\NetBlog.Utils.Enums.csproj" />
   </ItemGroup>
 

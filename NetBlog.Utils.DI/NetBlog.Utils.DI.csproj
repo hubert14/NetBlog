@@ -12,8 +12,6 @@
     <ProjectReference Include="..\NetBlog.BLL.Account\NetBlog.BLL.Account.csproj" />
     <ProjectReference Include="..\NetBlog.BLL.Blog\NetBlog.BLL.Blog.csproj" />
     <ProjectReference Include="..\NetBlog.BLL.Interfaces\NetBlog.BLL.Interfaces.csproj" />
-    <ProjectReference Include="..\NetBlog.DAL.Interfaces\NetBlog.DAL.Interfaces.csproj" />
-    <ProjectReference Include="..\NetBlog.DAL.Repositories\NetBlog.DAL.Repositories.csproj" />
   </ItemGroup>
 
 </Project>

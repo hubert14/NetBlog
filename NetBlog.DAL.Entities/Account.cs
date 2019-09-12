@@ -6,18 +6,24 @@ namespace NetBlog.DAL.Entities
 {
     public class Account : BaseEntity
     {
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
+        public virtual string Username { get; set; }
+        public virtual string Email { get; set; }
 
-        public string PhoneNumber { get; set; }
+        public virtual string FirstName { get; set; }
+        public virtual string LastName { get; set; }
 
-        public string ImageUrl { get; set; }
+        public virtual string PasswordHash { get; set; }
+        public virtual byte[] PasswordSalt { get; set; }
 
-        public DateTime Birthday { get; set; }
+        public virtual string PhoneNumber { get; set; }
 
-        public Gender Gender { get; set; }
+        public virtual string ImageUrl { get; set; }
 
-        public DateTimeOffset LastLoginUtc { get; set; }
+        public virtual DateTime? Birthday { get; set; }
+
+        public virtual Gender? Gender { get; set; }
+
+        public virtual DateTimeOffset? LastLoginUtc { get; set; }
 
         public virtual ICollection<Vote> Votes { get; set; }
         public virtual ICollection<Comment> Comments { get; set; }
